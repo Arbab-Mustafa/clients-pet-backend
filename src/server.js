@@ -12,7 +12,10 @@ connectDB();
 // ✅ CORS FIX: Use it **before** any routes
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://your-frontend.vercel.app"], // ✅ Add frontend URLs
+    origin: [
+      "http://localhost:5173",
+      "https://pet-appointment-frontend.vercel.app",
+    ], // ✅ Add frontend URLs
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // ✅ Allow cookies/auth headers
